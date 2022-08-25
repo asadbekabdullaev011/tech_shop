@@ -58,20 +58,18 @@ def pro():
         print("В данный время нету такой телефон")
 
 def admin():
-    # print("Добавить товар: 1") \nИзменить товар: 2
-    num = int(input("Ввод: "))
-    if num == 1:
-        pro_name = input("product_name: ")
-        pro_company = input("company: ")
-        pro_count = input("product_count: ")
-        pro_price = input("price: ")
-        cursor.execute(f"INSERT INTO products (product_name, company, product_count, price) VALUES('{pro_name}','{pro_company}', {pro_count}, {pro_price})")
-        connection.commit()
-        cursor.execute("SELECT * FROM products")
-        connection.commit()
-        dat = cursor.fetchall()
-        for i in dat:
-            print(*i)
+    print("Добавить товар")
+    pro_name = input("product_name: ")
+    pro_company = input("company: ")
+    pro_count = input("product_count: ")
+    pro_price = input("price: ")
+    cursor.execute(f"INSERT INTO products (product_name, company, product_count, price) VALUES('{pro_name}','{pro_company}', {pro_count}, {pro_price})")
+    connection.commit()
+    cursor.execute("SELECT * FROM products")
+    connection.commit()
+    dat = cursor.fetchall()
+    for i in dat:
+        print(*i)
 
 while True:
     print("Выберите кто вы?")
