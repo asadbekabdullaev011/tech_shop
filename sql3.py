@@ -125,22 +125,3 @@ while True:
 
 cursor.close()
 connection.close()
-
-    # elif num == 2:
-    #     print("Что вы хотите изменить (product_name, company, product_count, price)")
-    #     change = int(input("Ввод: "))
-    #     if change == 1:
-    #         pro_name1 = input("Введите новое product_name: ")
-    #         pro_name2 = input("Введите старое product_name: ")
-    #         cursor.execute(f"UPDATE products SET product_name = '{pro_name1}' WHERE product_name = '{pro_name2}'")
-    #         pro_company1 = input("Введите новое company: ")
-    #         pro_company2 = input("Введите старое company: ")
-    #         cursor.execute(f"UPDATE products SET company = '{pro_company1}' WHERE company = '{pro_company2}'")
-    #         pro_count1 = input("Введите новое product_count: ")
-    #         pro_count2 = input("Введите старое product_count: ")
-    #         cursor.execute(f"UPDATE products SET product_count = '{pro_count1}' WHERE product_count = '{pro_count2}'")
-    #         pro_price1 = input("Введите новое price: ")
-    #         pro_price2 = input("Введите старое price: ")
-    #         cursor.execute(f"UPDATE products SET price = '{pro_price1}' WHERE price = '{pro_price2}'")
-    #     else:
-    #         print("Пишите правильно")
